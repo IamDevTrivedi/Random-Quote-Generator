@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+#quote-box {
+    width: 40vw;
+    margin: auto;
+    border: 2px solid #30475e;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+#quote {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#author {
+    margin-top: 5px;
+    text-align: right;
+    color: #a0a0a0;
+    font-style: italic;
+}
+
+#button-box {
+    margin: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 17px;
+    background: linear-gradient(45deg, #f05454, #30475e);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px 0 rgba(240, 84, 84, 0.75);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #30475e, #f05454);
+    transform: translateY(-3px);
+}
+
+/* Tablet size */
+@media (max-width: 768px) {
+    #quote-box {
+        width: 60vw;
+    }
+
+    #quote {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+/* Mobile size */
+@media (max-width: 480px) {
+    #quote-box {
+        width: 80vw;
+        padding: 15px;
+    }
+
+    #quote {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
