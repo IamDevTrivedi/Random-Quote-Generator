@@ -19,7 +19,7 @@ async function fetchQuote() {
 async function displayRandomQuote() {
     const quote = await fetchQuote();
     if (quote) {
-        quoteText.textContent = quote.content;
+        quoteText.textContent = `"${quote.content}"`;
         authorName.textContent = `- ${quote.author || 'Unknown'}`;
     }
 
